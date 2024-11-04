@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Manager</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional for styling -->
+</head>
+<body>
+    <h1>Server Creation</h1>
+    <label for="serverType">Select Server Type:</label>
+    <select id="serverType">
+        <option value="windows">Windows</option>
+        <option value="linux">Linux</option>
+    </select>
+
+    <form id="serverForm" method="post">
+        <h3>Server Details</h3>
+        <label>vCenter IP: <input type="text" id="vcenter_ip" required></label><br>
+        <label>Username: <input type="text" id="username" required></label><br>
+        <label>Password: <input type="password" id="password" required></label><br>
+        <label>Template Name: <input type="text" id="template_name" required></label><br>
+        <label>New VM Name: <input type="text" id="vm_name" required></label><br>
+        
+        <button type="submit">Create Server</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
